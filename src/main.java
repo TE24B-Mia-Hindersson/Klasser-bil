@@ -7,7 +7,7 @@ public class main {
         Scanner scanner = new Scanner(System.in);
 
         try {
-            System.out.println("Skapa din egen bil!");
+            System.out.println("Ange din bils info:");
 
             System.out.print("Ange registreringsnummer: ");
             String regnr = scanner.nextLine();
