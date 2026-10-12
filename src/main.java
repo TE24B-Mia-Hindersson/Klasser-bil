@@ -31,16 +31,14 @@ public class main {
 
             bil1.ökaHastighet(ökning);
 
-            System.out.println("Nuvarande hastighet: "
-                    + bil1.getHastighet());
+            System.out.println("Nuvarande hastighet: " + bil1.getHastighet());
 
             System.out.print("Hur mycket vill du bromsa? ");
             int minskning = Integer.parseInt(scanner.nextLine());
 
             bil1.bromsa(minskning);
 
-            System.out.println("Hastighet efter bromsning: "
-                    + bil1.getHastighet());
+            System.out.println("Hastighet efter bromsning: "+ bil1.getHastighet());
 
         } catch (IllegalArgumentException e) {
             System.out.println("Fel: " + e.getMessage());

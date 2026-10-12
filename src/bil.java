@@ -61,9 +61,7 @@ public class bil {
 
     public void ökaHastighet(int ökning) {
         if (ökning <= 0) {
-            throw new IllegalArgumentException(
-                "Ökningen måste vara större än 0."
-            );
+            throw new IllegalArgumentException("Ökningen måste vara större än 0.");
         }
 
         hastighet += ökning;
@@ -71,9 +69,7 @@ public class bil {
 
     public void bromsa(int minskning) {
         if (minskning <= 0) {
-            throw new IllegalArgumentException(
-                "Minskningen måste vara större än 0."
-            );
+            throw new IllegalArgumentException( "Minskningen måste vara större än 0." );
         }
 
         if (minskning > hastighet) {
@@ -83,14 +79,14 @@ public class bil {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Bil{" +
-                "märke='" + märke + '\'' +
-                ", modell='" + modell + '\'' +
-                ", registreringsnummer='" + regnr + '\'' +
-                ", årsmodell=" + årsmodell +
-                ", hastighet=" + hastighet +
-                '}';
-    }
+    // @Override
+    // public String toString() {
+    //     return "Bil{" +
+    //             "märke='" + märke + '\'' +
+    //             ", modell='" + modell + '\'' +
+    //             ", registreringsnummer='" + regnr + '\'' +
+    //             ", årsmodell=" + årsmodell +
+    //             ", hastighet=" + hastighet +
+    //             '}';
+    // }
 }
